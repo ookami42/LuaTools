@@ -6,6 +6,9 @@ name: build
 on:
   release:
     types: [published]
+  # Manual run from the Actions tab (useful to validate the workflow
+  # without cutting a release).
+  workflow_dispatch:
 
 jobs:
   build:
